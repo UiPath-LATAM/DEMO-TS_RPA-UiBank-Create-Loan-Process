@@ -1,0 +1,88 @@
+{
+  "name": "UiBank Create Loan Process",
+  "description": "A demo project to show our RPA testing capabilities.",
+  "main": "Process\\Create Loan.xaml",
+  "dependencies": {
+    "UiPath.System.Activities": "[20.4.0]",
+    "UiPath.Testing.Activities": "[1.0.0]",
+    "UiPath.UIAutomation.Activities": "[20.4.1]"
+  },
+  "webServices": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "20.4.0.0",
+  "projectVersion": "7.2.4",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "isPausable": true,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "fileInfoCollection": [
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "c8cffe87-1866-4f98-8444-7ca9ed02a628",
+        "fileName": "Tests\\High-Volume & Long-Term Loan.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "cdcf76f8-32ae-4e9d-b298-c93a896d1c6d",
+        "fileName": "Tests\\High-Volume & Short-Term Loan.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "7335adc9-cfdf-4cce-b7bd-febe7f731a6e",
+        "fileName": "Tests\\Low-Volume & Long-Term Loan.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "c1127aee-8bfa-4b19-b197-d50130ec3ed0",
+        "fileName": "Tests\\Low-Volume & Short-Term Loan.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "dbf55a4f-716e-45f4-bc02-d16f52d72f69",
+        "fileName": "Tests\\Mid-Volume & Long-Term Loan.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "f3afbb5f-8c89-4a92-8678-89b49e03befc",
+        "fileName": "Tests\\Mid-Volume & Short-Term Loan.xaml"
+      }
+    ]
+  },
+  "arguments": {
+    "input": [
+      {
+        "name": "Amount",
+        "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+        "required": false,
+        "hasDefault": true
+      },
+      {
+        "name": "Term",
+        "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+        "required": false,
+        "hasDefault": true
+      }
+    ],
+    "output": [
+      {
+        "name": "Rate",
+        "type": "System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      }
+    ]
+  },
+  "expressionLanguage": "VisualBasic"
+}
