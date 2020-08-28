@@ -1,0 +1,7 @@
+{
+  "issueKeyTestcaseValues": {
+    "cdcf76f8-32ae-4e9d-b298-c93a896d1c6d": "28217031-19c6-41f5-e671-08d84a8b89fb"
+  },
+  "testManagerBasePath": "https://bznoctmdemos.brazilsouth.cloudapp.azure.com:444",
+  "testManagerInstanceType": "Server"
+}
