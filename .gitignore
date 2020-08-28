@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Pastas do projeto UiPath Studio
 .local/
 .settings/
@@ -10,3 +11,17 @@
 
 # logfiles(padrão que uso)
 *.log
+=======
+# Pastas do projeto UiPath Studio
+.local/
+.settings/
+
+# Arquivos de Video
+*.mp4
+
+# Arquivos do MACOS para armazenar atributos da pasta corrente
+.DS_Store
+
+# logfiles(padrão que uso)
+*.log
+>>>>>>> 248959d0598d342c777ed64a5f9518750f07a9a0
