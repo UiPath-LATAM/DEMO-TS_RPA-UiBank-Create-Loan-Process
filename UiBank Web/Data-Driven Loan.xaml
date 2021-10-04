@@ -1,0 +1,255 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Test" this:Test.LoanEmail="uipath@gmail.com" this:Test.LoanAmount="120000" this:Test.LoanTerm="5" this:Test.LoanIncome="30000" this:Test.LoanAge="35" this:Test.LoanGranted="No" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="LoanEmail" Type="InArgument(x:String)" />
+    <x:Property Name="LoanAmount" Type="InArgument(x:String)" />
+    <x:Property Name="LoanTerm" Type="InArgument(x:String)" />
+    <x:Property Name="LoanIncome" Type="InArgument(x:String)" />
+    <x:Property Name="LoanAge" Type="InArgument(x:String)" />
+    <x:Property Name="LoanGranted" Type="InArgument(x:String)" />
+    <x:Property Name="LoanRate" Type="InArgument(x:String)" />
+    <x:Property Name="UiBankWeb" Type="InArgument(x:String)" />
+  </x:Members>
+  <mva:VisualBasic.Settings>
+    <x:Null />
+  </mva:VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>894,857</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>Data_Driven_Loan_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UiAutomationX.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationX</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>UiPath.MobileAutomation</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldExpandAll">False</x:Boolean>
+      <x:Boolean x:Key="ShouldCollapseAll">True</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence DisplayName="Test Case" sap:VirtualizedContainerService.HintSize="242,376" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsPinned">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="Given" sap:VirtualizedContainerService.HintSize="200,68" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Setup Environment" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="UiBank Environment\Setup Environment.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <OutArgument x:TypeArguments="x:String" x:Key="UiBankAPI" />
+          <OutArgument x:TypeArguments="x:String" x:Key="UiBankWeb">
+            <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="UiBankWeb" />
+          </OutArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="UiBankAdmin" />
+        </ui:InvokeWorkflowFile.Arguments>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:InvokeWorkflowFile>
+    </Sequence>
+    <Sequence DisplayName="When" sap:VirtualizedContainerService.HintSize="200,68" sap2010:WorkflowViewState.IdRef="Sequence_3">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Create Loan" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="UiBank Web\Libraries\Create Loan.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="LoanEmail">[LoanEmail]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="LoanAmount">[LoanAmount]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="LoanTerm">[LoanTerm]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="LoanIncome">[LoanIncome]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="LoanAge">[LoanAge]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="UiBankWeb">[UiBankWeb]</InArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsPinned">True</x:Boolean>
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:InvokeWorkflowFile>
+    </Sequence>
+    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="200,68" sap2010:WorkflowViewState.IdRef="Sequence_4">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard CloseMode="Always" DisplayName="Verify Loan Details" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="IfNotOpen">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[LoanGranted]" sap:VirtualizedContainerService.HintSize="497,271" sap2010:WorkflowViewState.IdRef="Switch`1_1">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uta:VerifyControlAttribute x:Key="Yes" ContinueOnFailure="True" DisplayName="Verify Loan Rate" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_1" Operator="Equality" OutputArgument="Text" TakeScreenshotInCaseOfFailingAssertion="True">
+                <uta:VerifyControlAttribute.ActivityToTest>
+                  <ActivityAction>
+                    <uix:NGetText DisplayName="Get Loan Rate" sap:VirtualizedContainerService.HintSize="334,167" sap2010:WorkflowViewState.IdRef="NGetText_1">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="https://uibank.uipath.com/loans/result/5eb3efa66e98c70043201384/9/true" DesignTimeRectangle="1845, 925, 29, 67" ElementType="Text" FriendlyName="'9'" FullSelectorArgument="&lt;html app='chrome.exe' title='UiBank' /&gt;&lt;webctrl id='rateValue' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;html app='chrome.exe' title='UiBank' /&gt;&lt;webctrl id='rateValue' tag='SPAN' type='' aaname='9' /&gt;" InformativeScreenshot="6c88d9c2113f27f57fedaae840c78baa.png" SearchSteps="FuzzySelector" Text="9" TextMethod="AttributeText" TextSelector="&lt;webctrl tag='SPAN' type='' /&gt;">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target DesignTimeRectangle="857, 866, 2140, 48" FriendlyName="'With a'" FullSelectorArgument="&lt;html app='chrome.exe' title='UiBank' /&gt;&lt;webctrl idx='1' tag='H5' /&gt;" FuzzySelectorArgument="&lt;html app='chrome.exe' title='UiBank' /&gt;&lt;webctrl type='' tag='H5' aaname=' With a fantastic rate of: ' check:text='With a fantastic rate of:' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" Text="With a fantastic rate of:" TextMethod="AttributeText" TextSelector="&lt;webctrl type='' tag='H5' /&gt;" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                      <uix:NGetText.Text>
+                        <OutArgument x:TypeArguments="x:Object">
+                          <VariableReference x:TypeArguments="x:Object">
+                            <VariableReference.Variable>
+                              <Variable x:TypeArguments="x:Object" x:Name="__ReferenceID0" Name="Text" />
+                            </VariableReference.Variable>
+                          </VariableReference>
+                        </OutArgument>
+                      </uix:NGetText.Text>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NGetText>
+                  </ActivityAction>
+                </uta:VerifyControlAttribute.ActivityToTest>
+                <uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                  <ActivityFunc x:TypeArguments="x:Object">
+                    <uta:ArgumentsBridge sap2010:WorkflowViewState.IdRef="ArgumentsBridge_1">
+                      <uta:ArgumentsBridge.Input>
+                        <InArgument x:TypeArguments="x:Object">
+                          <VariableValue x:TypeArguments="x:Object" Variable="{x:Reference __ReferenceID0}" />
+                        </InArgument>
+                      </uta:ArgumentsBridge.Input>
+                    </uta:ArgumentsBridge>
+                  </ActivityFunc>
+                </uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                <uta:VerifyControlAttribute.Expression>
+                  <InArgument x:TypeArguments="x:String">[LoanRate]</InArgument>
+                </uta:VerifyControlAttribute.Expression>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uta:VerifyControlAttribute>
+              <uta:VerifyControlAttribute x:Key="No" ContinueOnFailure="True" DisplayName="Verify Error Message" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_2" Operator="Equality" OutputArgument="Text" TakeScreenshotInCaseOfFailingAssertion="True">
+                <uta:VerifyControlAttribute.ActivityToTest>
+                  <ActivityAction>
+                    <uix:NGetText DisplayName="Get Error Message" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="NGetText_2">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="https://uibank.uipath.com/loans/result//0/false" DesignTimeRectangle="857, 642, 2140, 192" FriendlyName="'Sorry, at'" FullSelectorArgument="&lt;html app='chrome.exe' title='UiBank' /&gt;&lt;webctrl tag='H1' /&gt;" FuzzySelectorArgument="&lt;html app='chrome.exe' title='UiBank' /&gt;&lt;webctrl tag='H1' type='' aaname='Sorry, at this time you have not been approved for a loan.' /&gt;" InformativeScreenshot="58be7e4446973fd1b190fa10caf010cd.png" SearchSteps="FuzzySelector" Text="Sorry, at this time you have not been approved for a loan." TextMethod="AttributeText" TextSelector="&lt;webctrl tag='H1' type='' /&gt;" />
+                      </uix:NGetText.Target>
+                      <uix:NGetText.Text>
+                        <OutArgument x:TypeArguments="x:Object">
+                          <VariableReference x:TypeArguments="x:Object">
+                            <VariableReference.Variable>
+                              <Variable x:TypeArguments="x:Object" x:Name="__ReferenceID1" Name="Text" />
+                            </VariableReference.Variable>
+                          </VariableReference>
+                        </OutArgument>
+                      </uix:NGetText.Text>
+                    </uix:NGetText>
+                  </ActivityAction>
+                </uta:VerifyControlAttribute.ActivityToTest>
+                <uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                  <ActivityFunc x:TypeArguments="x:Object">
+                    <uta:ArgumentsBridge sap2010:WorkflowViewState.IdRef="ArgumentsBridge_2">
+                      <uta:ArgumentsBridge.Input>
+                        <InArgument x:TypeArguments="x:Object">
+                          <VariableValue x:TypeArguments="x:Object" Variable="{x:Reference __ReferenceID1}" />
+                        </InArgument>
+                      </uta:ArgumentsBridge.Input>
+                    </uta:ArgumentsBridge>
+                  </ActivityFunc>
+                </uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                <uta:VerifyControlAttribute.Expression>
+                  <InArgument x:TypeArguments="x:String">["Sorry, at this time you have not been approved for a loan."]</InArgument>
+                </uta:VerifyControlAttribute.Expression>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uta:VerifyControlAttribute>
+            </Switch>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp BrowserType="Chrome" IconBase64="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" InformativeScreenshot="39fe53b0771697270a23cc7525fa2cee.png" Selector="&lt;html app='chrome.exe' title='UiBank'/&gt;" Url="[UiBankWeb]" />
+        </uix:NApplicationCard.TargetApp>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </uix:NApplicationCard>
+    </Sequence>
+  </Sequence>
+</Activity>

@@ -1,26 +1,31 @@
 {
   "name": "UiBank Create Loan Process",
   "description": "A demo project to show our RPA testing capabilities.",
-  "main": "Process\\Create Loan.xaml",
+  "main": "UiBank Web\\Libraries\\Create Loan.xaml",
   "dependencies": {
-    "UiPath.System.Activities": "[20.4.0]",
-    "UiPath.Testing.Activities": "[1.0.0]",
-    "UiPath.UIAutomation.Activities": "[20.4.1]"
+    "UiPath.System.Activities": "[21.4.1]",
+    "UiPath.Testing.Activities": "[1.3.3]",
+    "UiPath.UIAutomation.Activities": "[21.4.4]"
   },
   "webServices": [],
+  "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "20.4.0.0",
-  "projectVersion": "7.2.4",
+  "projectVersion": "7.2.86272051",
   "runtimeOptions": {
     "autoDispose": false,
     "isPausable": true,
+    "isAttended": false,
     "requiresUserInteraction": true,
     "supportsPersistence": false,
     "excludedLoggedData": [
       "Private:*",
       "*password*"
     ],
-    "executionType": "Workflow"
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": false
   },
   "designOptions": {
     "projectProfile": "Developement",
@@ -29,38 +34,87 @@
       "includeOriginalXaml": false,
       "privateWorkflows": []
     },
+    "processOptions": {
+      "ignoredFiles": []
+    },
     "fileInfoCollection": [
       {
-        "editingStatus": "Publishable",
+        "editingStatus": "InProgress",
         "testCaseId": "c8cffe87-1866-4f98-8444-7ca9ed02a628",
         "fileName": "Tests\\High-Volume & Long-Term Loan.xaml"
       },
       {
-        "editingStatus": "Publishable",
+        "editingStatus": "InProgress",
         "testCaseId": "cdcf76f8-32ae-4e9d-b298-c93a896d1c6d",
         "fileName": "Tests\\High-Volume & Short-Term Loan.xaml"
       },
       {
-        "editingStatus": "Publishable",
+        "editingStatus": "InProgress",
         "testCaseId": "7335adc9-cfdf-4cce-b7bd-febe7f731a6e",
         "fileName": "Tests\\Low-Volume & Long-Term Loan.xaml"
       },
       {
-        "editingStatus": "Publishable",
+        "editingStatus": "InProgress",
         "testCaseId": "c1127aee-8bfa-4b19-b197-d50130ec3ed0",
         "fileName": "Tests\\Low-Volume & Short-Term Loan.xaml"
       },
       {
-        "editingStatus": "Publishable",
+        "editingStatus": "InProgress",
         "testCaseId": "dbf55a4f-716e-45f4-bc02-d16f52d72f69",
         "fileName": "Tests\\Mid-Volume & Long-Term Loan.xaml"
       },
       {
-        "editingStatus": "Publishable",
+        "editingStatus": "InProgress",
         "testCaseId": "f3afbb5f-8c89-4a92-8678-89b49e03befc",
         "fileName": "Tests\\Mid-Volume & Short-Term Loan.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "0c484cb2-efac-4447-8773-891802a3330c",
+        "fileName": "Process\\TestCase.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "f2995609-128e-4bf0-b4cf-790ff6df2cef",
+        "fileName": "UiBank Web\\High Volume Loan.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "1196583f-4665-48c7-9f1d-6cc942779093",
+        "fileName": "UiBank Web\\Data-Driven Loan.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "a3d043cb-c972-4dd2-aa79-08da2264f4c2",
+        "fileName": "UiBank Web\\Long Term Loan.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "bd6f55c8-798f-41b0-9d2b-ba0551aa211c",
+        "fileName": "UiBank Web\\Mid Term Loan.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "d105a53e-fdb2-4aa8-9420-b3f1301a390a",
+        "fileName": "UiBank Web\\Old Age Loan.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "cae15cee-f6fb-4ff4-9409-0417cac6c8b7",
+        "fileName": "UiBank Web\\Short Term Loan.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "d5aeec69-988f-4c44-a544-2df24069cdb1",
+        "fileName": "UiBank Web\\Standard Loan.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "825a91a6-958b-46bd-ac2d-1f26fab2318f",
+        "fileName": "UiBank Web\\Young Age Loan.xaml"
       }
-    ]
+    ],
+    "modernBehavior": false
   },
   "arguments": {
     "input": [
@@ -84,5 +138,23 @@
       }
     ]
   },
-  "expressionLanguage": "VisualBasic"
+  "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "Process\\Create Loan.xaml",
+      "uniqueId": "28a3065a-c224-4957-aaac-4be95f8fbf1a",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "UiBank Web\\Libraries\\Create Loan.xaml",
+      "uniqueId": "d1c35f7a-3e10-434a-b11e-157ebfc3f436",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Legacy"
 }
